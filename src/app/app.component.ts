@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PhoneNumberPipes';
+  code: number | undefined;
+  number: number | undefined;
+
+  displayFormat = false;
+
+  showFormatting() {
+    this.displayFormat = true;
+  }
 }
